@@ -1,0 +1,243 @@
+\doxysection{Contains all of the 4D vector operations/functions.}
+\hypertarget{group__vec4__}{}\label{group__vec4__}\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvec4}{vec4}} \mbox{\hyperlink{group__vec4___gabf479d5cb15d0f0efd1729bdb163c509}{vec4\+\_\+create\+\_\+from\+\_\+vec2}} (const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Transform a 2D vector into a 4D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvec4}{vec4}} \mbox{\hyperlink{group__vec4___gad737a7fab0401487ff8ad6f5df97022a}{vec4\+\_\+create\+\_\+from\+\_\+vec3}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Transform a 3D vector into a 4D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec4___ga172c4218866d5044e2f1320bd96387de}{vec4\+\_\+add}} (\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Add a 4D vector to another 4D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec4___gac73b0abb224e90e204ec554617a94920}{vec4\+\_\+sub}} (\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Subtract a 4D vector with another 4D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec4___ga4fbf6a8409a4cf21cddfbd3be28d4b6f}{vec4\+\_\+scalar\+\_\+mult}} (\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} s)
+\begin{DoxyCompactList}\small\item\em Scalar multiplication with a 4D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec4___ga3761924561622995287f83d593c91ea4}{vec4\+\_\+scalar\+\_\+div}} (\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v, \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} s)
+\begin{DoxyCompactList}\small\item\em Scalar division with a 4D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec4___ga7d084dfd0557b1b4d5106df28d026063}{vec4\+\_\+square\+\_\+root}} (\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Calculate the square root of the given 4D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec4___ga54e4527bd4c78edf76877b8bd7493e37}{vec4\+\_\+magnitude}} (const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Calculate the magnitude of the 4D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec4___ga4aa83cf82f98b5e5c080dac74f2aacc7}{vec4\+\_\+normalize}} (\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Normalize the 4D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec4___ga1a3e8f68771eddb120f421806bcc5536}{vec4\+\_\+dot}} (const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Create a dot product between the two 4D vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__vec4___ga172c4218866d5044e2f1320bd96387de}\label{group__vec4___ga172c4218866d5044e2f1320bd96387de} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_add@{vec4\_add}}
+\index{vec4\_add@{vec4\_add}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_add()}{vec4\_add()}}
+{\footnotesize\ttfamily void vec4\+\_\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Add a 4D vector to another 4D vector. 
+
+It will add the second 4D vector to the first 4D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v1\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___gabf479d5cb15d0f0efd1729bdb163c509}\label{group__vec4___gabf479d5cb15d0f0efd1729bdb163c509} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_create\_from\_vec2@{vec4\_create\_from\_vec2}}
+\index{vec4\_create\_from\_vec2@{vec4\_create\_from\_vec2}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_create\_from\_vec2()}{vec4\_create\_from\_vec2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvec4}{vec4}} vec4\+\_\+create\+\_\+from\+\_\+vec2 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Transform a 2D vector into a 4D vector. 
+
+This is used to create a new 4D vector with values of the 2D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2} input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}\doxylink{structvec4}{vec4}\mbox{]} Returns a 4D vector. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The new components (z, w) will be initialized with 0. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___gad737a7fab0401487ff8ad6f5df97022a}\label{group__vec4___gad737a7fab0401487ff8ad6f5df97022a} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_create\_from\_vec3@{vec4\_create\_from\_vec3}}
+\index{vec4\_create\_from\_vec3@{vec4\_create\_from\_vec3}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_create\_from\_vec3()}{vec4\_create\_from\_vec3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvec4}{vec4}} vec4\+\_\+create\+\_\+from\+\_\+vec3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Transform a 3D vector into a 4D vector. 
+
+This is used to create a new 4D vector with values of the 2D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec3}{vec3} input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}\doxylink{structvec4}{vec4}\mbox{]} Returns a 4D vector. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The new component (w) will be initialized with 0. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___ga1a3e8f68771eddb120f421806bcc5536}\label{group__vec4___ga1a3e8f68771eddb120f421806bcc5536} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_dot@{vec4\_dot}}
+\index{vec4\_dot@{vec4\_dot}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_dot()}{vec4\_dot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} vec4\+\_\+dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Create a dot product between the two 4D vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v1\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}float/f32\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{group__vec4___ga54e4527bd4c78edf76877b8bd7493e37}\label{group__vec4___ga54e4527bd4c78edf76877b8bd7493e37} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_magnitude@{vec4\_magnitude}}
+\index{vec4\_magnitude@{vec4\_magnitude}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_magnitude()}{vec4\_magnitude()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} vec4\+\_\+magnitude (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Calculate the magnitude of the 4D vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}float/f32\mbox{]} Returns the magnitude of the 4D vector. 
+\end{DoxyReturn}
+\Hypertarget{group__vec4___ga4aa83cf82f98b5e5c080dac74f2aacc7}\label{group__vec4___ga4aa83cf82f98b5e5c080dac74f2aacc7} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_normalize@{vec4\_normalize}}
+\index{vec4\_normalize@{vec4\_normalize}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_normalize()}{vec4\_normalize()}}
+{\footnotesize\ttfamily void vec4\+\_\+normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Normalize the 4D vector. 
+
+Will normalize the 4D vector on all components (x, y, z, w).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___ga3761924561622995287f83d593c91ea4}\label{group__vec4___ga3761924561622995287f83d593c91ea4} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_scalar\_div@{vec4\_scalar\_div}}
+\index{vec4\_scalar\_div@{vec4\_scalar\_div}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_scalar\_div()}{vec4\_scalar\_div()}}
+{\footnotesize\ttfamily void vec4\+\_\+scalar\+\_\+div (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Scalar division with a 4D vector. 
+
+Do division with a scalar on all components of a 4D vector (x, y, z, w).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+{\em \mbox{[}s\mbox{]}} & Takes a float/f32 value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___ga4fbf6a8409a4cf21cddfbd3be28d4b6f}\label{group__vec4___ga4fbf6a8409a4cf21cddfbd3be28d4b6f} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_scalar\_mult@{vec4\_scalar\_mult}}
+\index{vec4\_scalar\_mult@{vec4\_scalar\_mult}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_scalar\_mult()}{vec4\_scalar\_mult()}}
+{\footnotesize\ttfamily void vec4\+\_\+scalar\+\_\+mult (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Scalar multiplication with a 4D vector. 
+
+Do multiplication with a scalar on all components of a 4D vector (x, y, z, w).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+{\em \mbox{[}s\mbox{]}} & Takes a float/f32 value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___ga7d084dfd0557b1b4d5106df28d026063}\label{group__vec4___ga7d084dfd0557b1b4d5106df28d026063} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_square\_root@{vec4\_square\_root}}
+\index{vec4\_square\_root@{vec4\_square\_root}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_square\_root()}{vec4\_square\_root()}}
+{\footnotesize\ttfamily void vec4\+\_\+square\+\_\+root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Calculate the square root of the given 4D vector. 
+
+Calculate the square root of a 4D vector on all components (x, y, z, w).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec4___gac73b0abb224e90e204ec554617a94920}\label{group__vec4___gac73b0abb224e90e204ec554617a94920} 
+\index{Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}!vec4\_sub@{vec4\_sub}}
+\index{vec4\_sub@{vec4\_sub}!Contains all of the 4D vector operations/functions.@{Contains all of the 4D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec4\_sub()}{vec4\_sub()}}
+{\footnotesize\ttfamily void vec4\+\_\+sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Subtract a 4D vector with another 4D vector. 
+
+The first 4D vector will be subtracted by the second 4D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v1\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}

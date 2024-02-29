@@ -1,0 +1,243 @@
+\doxysection{Contains all of the 2D vector operations/functions.}
+\hypertarget{group__vec2__}{}\label{group__vec2__}\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvec2}{vec2}} \mbox{\hyperlink{group__vec2___ga721df7ad33cd512f1d693282450779d0}{vec2\+\_\+create\+\_\+from\+\_\+vec3}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Transform a 3D vector into a 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvec2}{vec2}} \mbox{\hyperlink{group__vec2___gaf35783879bbe7425ac9c280601373ce8}{vec2\+\_\+create\+\_\+from\+\_\+vec4}} (const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Transform a 4D vector into a 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec2___ga4ffc87efb657d84d7baa2816a05febe3}{vec2\+\_\+add}} (\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Add a 2D vector to another 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec2___ga56c704ef284d4549e5e379affede3bd5}{vec2\+\_\+sub}} (\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Subtract a 2D vector with another 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec2___ga4cfab1028bcc852cfd8f34b77f94d8a7}{vec2\+\_\+scalar\+\_\+mult}} (\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v, \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} const s)
+\begin{DoxyCompactList}\small\item\em Scalar multiplication with a 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec2___ga0a4cbb9f584684bcf29fd1416200a383}{vec2\+\_\+scalar\+\_\+div}} (\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v, \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} s)
+\begin{DoxyCompactList}\small\item\em Scalar division with a 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec2___gaf5963d14febd93bb0c6898b5c9a62982}{vec2\+\_\+square\+\_\+root}} (\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Calculate the square root of the given 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec2___ga4bb6b612b2e350222c5ac5d6e81099f1}{vec2\+\_\+magnitude}} (const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Calculate the magnitude of the 2D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec2___gad2a1fb8b59b62cf3a4bf2ee5cfa8e202}{vec2\+\_\+normalize}} (\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Normalize the 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec2___gac2fd3e1c903642d7895162bf9fd2880b}{vec2\+\_\+dot}} (const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Create a dot product between the two 2D vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__vec2___ga4ffc87efb657d84d7baa2816a05febe3}\label{group__vec2___ga4ffc87efb657d84d7baa2816a05febe3} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_add@{vec2\_add}}
+\index{vec2\_add@{vec2\_add}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_add()}{vec2\_add()}}
+{\footnotesize\ttfamily void vec2\+\_\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Add a 2D vector to another 2D vector. 
+
+It will add the second 2D vector to the first 2D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v1\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___ga721df7ad33cd512f1d693282450779d0}\label{group__vec2___ga721df7ad33cd512f1d693282450779d0} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_create\_from\_vec3@{vec2\_create\_from\_vec3}}
+\index{vec2\_create\_from\_vec3@{vec2\_create\_from\_vec3}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_create\_from\_vec3()}{vec2\_create\_from\_vec3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvec2}{vec2}} vec2\+\_\+create\+\_\+from\+\_\+vec3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Transform a 3D vector into a 2D vector. 
+
+This is used to create a new 2D vector with values of the 3D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec3}{vec3} input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}\doxylink{structvec2}{vec2}\mbox{]} Returns a 2D vector. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The last component (z) of the 3D vector is lost ofcourse. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___gaf35783879bbe7425ac9c280601373ce8}\label{group__vec2___gaf35783879bbe7425ac9c280601373ce8} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_create\_from\_vec4@{vec2\_create\_from\_vec4}}
+\index{vec2\_create\_from\_vec4@{vec2\_create\_from\_vec4}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_create\_from\_vec4()}{vec2\_create\_from\_vec4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvec2}{vec2}} vec2\+\_\+create\+\_\+from\+\_\+vec4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Transform a 4D vector into a 2D vector. 
+
+This is used to create a new 2D vector with values of the 4D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec4}{vec4} input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}\doxylink{structvec2}{vec2}\mbox{]} Returns a 2D vector. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The last two components of the 4D vector (z, w) are lost ofcourse. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___gac2fd3e1c903642d7895162bf9fd2880b}\label{group__vec2___gac2fd3e1c903642d7895162bf9fd2880b} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_dot@{vec2\_dot}}
+\index{vec2\_dot@{vec2\_dot}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_dot()}{vec2\_dot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} vec2\+\_\+dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Create a dot product between the two 2D vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v1\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}float/f32\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{group__vec2___ga4bb6b612b2e350222c5ac5d6e81099f1}\label{group__vec2___ga4bb6b612b2e350222c5ac5d6e81099f1} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_magnitude@{vec2\_magnitude}}
+\index{vec2\_magnitude@{vec2\_magnitude}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_magnitude()}{vec2\_magnitude()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} vec2\+\_\+magnitude (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Calculate the magnitude of the 2D vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}float/f32\mbox{]} Returns the magnitude of the 2D vector. 
+\end{DoxyReturn}
+\Hypertarget{group__vec2___gad2a1fb8b59b62cf3a4bf2ee5cfa8e202}\label{group__vec2___gad2a1fb8b59b62cf3a4bf2ee5cfa8e202} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_normalize@{vec2\_normalize}}
+\index{vec2\_normalize@{vec2\_normalize}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_normalize()}{vec2\_normalize()}}
+{\footnotesize\ttfamily void vec2\+\_\+normalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Normalize the 2D vector. 
+
+Will normalize the 2D vector on all components (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___ga0a4cbb9f584684bcf29fd1416200a383}\label{group__vec2___ga0a4cbb9f584684bcf29fd1416200a383} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_scalar\_div@{vec2\_scalar\_div}}
+\index{vec2\_scalar\_div@{vec2\_scalar\_div}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_scalar\_div()}{vec2\_scalar\_div()}}
+{\footnotesize\ttfamily void vec2\+\_\+scalar\+\_\+div (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Scalar division with a 2D vector. 
+
+Do division with a scalar on all components of a 2D vector (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+{\em \mbox{[}s\mbox{]}} & Takes a float/f32 value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___ga4cfab1028bcc852cfd8f34b77f94d8a7}\label{group__vec2___ga4cfab1028bcc852cfd8f34b77f94d8a7} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_scalar\_mult@{vec2\_scalar\_mult}}
+\index{vec2\_scalar\_mult@{vec2\_scalar\_mult}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_scalar\_mult()}{vec2\_scalar\_mult()}}
+{\footnotesize\ttfamily void vec2\+\_\+scalar\+\_\+mult (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} const}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Scalar multiplication with a 2D vector. 
+
+Do multiplication with a scalar on all components of a 2D vector (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+{\em \mbox{[}s\mbox{]}} & Takes a float/f32 value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___gaf5963d14febd93bb0c6898b5c9a62982}\label{group__vec2___gaf5963d14febd93bb0c6898b5c9a62982} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_square\_root@{vec2\_square\_root}}
+\index{vec2\_square\_root@{vec2\_square\_root}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_square\_root()}{vec2\_square\_root()}}
+{\footnotesize\ttfamily void vec2\+\_\+square\+\_\+root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Calculate the square root of the given 2D vector. 
+
+Calculate the square root of a 2D vector on all components (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}
+\Hypertarget{group__vec2___ga56c704ef284d4549e5e379affede3bd5}\label{group__vec2___ga56c704ef284d4549e5e379affede3bd5} 
+\index{Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}!vec2\_sub@{vec2\_sub}}
+\index{vec2\_sub@{vec2\_sub}!Contains all of the 2D vector operations/functions.@{Contains all of the 2D vector operations/functions.}}
+\doxysubsubsection{\texorpdfstring{vec2\_sub()}{vec2\_sub()}}
+{\footnotesize\ttfamily void vec2\+\_\+sub (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}}]{v1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Subtract a 2D vector with another 2D vector. 
+
+The first 2D vector will be subtracted by the second 2D vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+{\em \mbox{[}\texorpdfstring{$\ast$}{*}v1\mbox{]}} & Takes a pointer to a \doxylink{structvec2}{vec2}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The first input will be modified. 
+\end{DoxyNote}

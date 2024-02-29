@@ -1,0 +1,64 @@
+\doxysection{include/mat4x4.h File Reference}
+\hypertarget{mat4x4_8h}{}\label{mat4x4_8h}\index{include/mat4x4.h@{include/mat4x4.h}}
+{\ttfamily \#include "{}../include/math\+\_\+types.\+h"{}}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmat4x4}{mat4x4}}
+\begin{DoxyCompactList}\small\item\em Documentation will be added later. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct mat4x4 \mbox{\hyperlink{mat4x4_8h_a46f8412881fca9797e7ecf7dc28ee6a7}{mat4x4}}
+\begin{DoxyCompactList}\small\item\em Documentation will be added later. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mat4x4_8h_affab62f627b5deb58ab42de9787e9ae9}{mat4x4\+\_\+parse}} (\mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}dest, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v0, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v1, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v2, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v3)
+\item 
+\mbox{\hyperlink{structmat4x4}{mat4x4}} \mbox{\hyperlink{mat4x4_8h_a9b3e039f9c54e210a0c20a6482734de5}{mat4x4\+\_\+create}} (const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v0, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v1, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v2, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v3)
+\item 
+\mbox{\hyperlink{structmat4x4}{mat4x4}} \mbox{\hyperlink{mat4x4_8h_a917a4c5b6cb3c305b27e1a72a141f82e}{mat4x4\+\_\+mult}} (const \mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}m0, const \mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}m1)
+\item 
+\mbox{\hyperlink{structvec4}{vec4}} \mbox{\hyperlink{mat4x4_8h_a448a98f8cc112aa44546fab633fae0f9}{mat4x4\+\_\+vec4\+\_\+mult}} (const \mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}m, const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{mat4x4_8h_a46f8412881fca9797e7ecf7dc28ee6a7}\label{mat4x4_8h_a46f8412881fca9797e7ecf7dc28ee6a7} 
+\index{mat4x4.h@{mat4x4.h}!mat4x4@{mat4x4}}
+\index{mat4x4@{mat4x4}!mat4x4.h@{mat4x4.h}}
+\doxysubsubsection{\texorpdfstring{mat4x4}{mat4x4}}
+{\footnotesize\ttfamily typedef struct mat4x4 mat4x4}
+
+
+
+Documentation will be added later. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mat4x4_8h_a9b3e039f9c54e210a0c20a6482734de5}\label{mat4x4_8h_a9b3e039f9c54e210a0c20a6482734de5} 
+\index{mat4x4.h@{mat4x4.h}!mat4x4\_create@{mat4x4\_create}}
+\index{mat4x4\_create@{mat4x4\_create}!mat4x4.h@{mat4x4.h}}
+\doxysubsubsection{\texorpdfstring{mat4x4\_create()}{mat4x4\_create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmat4x4}{mat4x4}} mat4x4\+\_\+create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v0,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v1,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v2,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mat4x4_8h_a917a4c5b6cb3c305b27e1a72a141f82e}\label{mat4x4_8h_a917a4c5b6cb3c305b27e1a72a141f82e} 
+\index{mat4x4.h@{mat4x4.h}!mat4x4\_mult@{mat4x4\_mult}}
+\index{mat4x4\_mult@{mat4x4\_mult}!mat4x4.h@{mat4x4.h}}
+\doxysubsubsection{\texorpdfstring{mat4x4\_mult()}{mat4x4\_mult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmat4x4}{mat4x4}} mat4x4\+\_\+mult (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}}]{m0,  }\item[{const \mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}}]{m1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mat4x4_8h_affab62f627b5deb58ab42de9787e9ae9}\label{mat4x4_8h_affab62f627b5deb58ab42de9787e9ae9} 
+\index{mat4x4.h@{mat4x4.h}!mat4x4\_parse@{mat4x4\_parse}}
+\index{mat4x4\_parse@{mat4x4\_parse}!mat4x4.h@{mat4x4.h}}
+\doxysubsubsection{\texorpdfstring{mat4x4\_parse()}{mat4x4\_parse()}}
+{\footnotesize\ttfamily void mat4x4\+\_\+parse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}}]{dest,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v0,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v1,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v2,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{mat4x4_8h_a448a98f8cc112aa44546fab633fae0f9}\label{mat4x4_8h_a448a98f8cc112aa44546fab633fae0f9} 
+\index{mat4x4.h@{mat4x4.h}!mat4x4\_vec4\_mult@{mat4x4\_vec4\_mult}}
+\index{mat4x4\_vec4\_mult@{mat4x4\_vec4\_mult}!mat4x4.h@{mat4x4.h}}
+\doxysubsubsection{\texorpdfstring{mat4x4\_vec4\_mult()}{mat4x4\_vec4\_mult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvec4}{vec4}} mat4x4\+\_\+vec4\+\_\+mult (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structmat4x4}{mat4x4}} \texorpdfstring{$\ast$}{*}}]{m,  }\item[{const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [extern]}}
+

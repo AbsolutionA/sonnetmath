@@ -1,0 +1,59 @@
+\doxysection{vector4.\+h}
+\hypertarget{vector4_8h_source}{}\label{vector4_8h_source}\index{include/vector4.h@{include/vector4.h}}
+\mbox{\hyperlink{vector4_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VECTOR4\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VECTOR4\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{math__types_8h}{math\_types.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec4}{vec4}}\ \mbox{\hyperlink{group__vec4___gabf479d5cb15d0f0efd1729bdb163c509}{vec4\_create\_from\_vec2}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec2}{vec2}}\ *v);\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec4}{vec4}}\ \mbox{\hyperlink{group__vec4___gad737a7fab0401487ff8ad6f5df97022a}{vec4\_create\_from\_vec3}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec4___ga172c4218866d5044e2f1320bd96387de}{vec4\_add}}(\mbox{\hyperlink{structvec4}{vec4}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v1);\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec4___gac73b0abb224e90e204ec554617a94920}{vec4\_sub}}(\mbox{\hyperlink{structvec4}{vec4}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v1);\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec4___ga4fbf6a8409a4cf21cddfbd3be28d4b6f}{vec4\_scalar\_mult}}(\mbox{\hyperlink{structvec4}{vec4}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ s);\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec4___ga3761924561622995287f83d593c91ea4}{vec4\_scalar\_div}}(\mbox{\hyperlink{structvec4}{vec4}}\ *v,\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ s);\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec4___ga7d084dfd0557b1b4d5106df28d026063}{vec4\_square\_root}}(\mbox{\hyperlink{structvec4}{vec4}}\ *v);\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{group__vec4___ga54e4527bd4c78edf76877b8bd7493e37}{vec4\_magnitude}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v);\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec4___ga4aa83cf82f98b5e5c080dac74f2aacc7}{vec4\_normalize}}(\mbox{\hyperlink{structvec4}{vec4}}\ *v);\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{group__vec4___ga1a3e8f68771eddb120f421806bcc5536}{vec4\_dot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v1);\ }
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{comment}{//\ Commented\ out\ for\ now.}}
+\DoxyCodeLine{00120\ \textcolor{comment}{//\ /**\ @brief\ Using\ SIMD\ SSE.\ WIP\ \ */}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{comment}{//\ /**\ @brief\ Add\ a\ vector\ to\ another\ vector.\ */}}
+\DoxyCodeLine{00123\ \textcolor{comment}{//\ extern\ void\ vec4\_sse\_add(vec4\ *v,\ vec4\ *v1);\ }}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{comment}{//\ /**\ @brief\ Subtract\ a\ vector\ with\ another\ vector.\ */}}
+\DoxyCodeLine{00126\ \textcolor{comment}{//\ extern\ void\ vec4\_sse\_sub(vec4\ *v,\ const\ vec4\ *v1);\ }}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{comment}{//\ /**\ @brief\ Scalar\ multiplication\ with\ a\ vector.\ */}}
+\DoxyCodeLine{00129\ \textcolor{comment}{//\ extern\ void\ vec4\_sse\_scalar\_mult(vec4\ *v,\ const\ f32\ s);\ }}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{comment}{//\ /**\ @brief\ Scalar\ division\ with\ a\ vector.\ */}}
+\DoxyCodeLine{00132\ \textcolor{comment}{//\ extern\ void\ vec4\_sse\_scalar\_div(vec4\ *v,\ const\ f32\ s);\ }}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{comment}{//\ /**\ @brief\ Calculate\ the\ square\ root\ of\ the\ given\ vector.\ */}}
+\DoxyCodeLine{00135\ \textcolor{comment}{//\ extern\ void\ vec4\_sse\_square\_root(vec4\ *v);\ }}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{comment}{//\ /**\ @brief\ Calculate\ the\ magnitude\ of\ the\ vector.\ */}}
+\DoxyCodeLine{00138\ \textcolor{comment}{//\ extern\ f32\ vec4\_sse\_magnitude(vec4\ *v);\ }}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{comment}{//\ /**\ @brief\ Normalize\ the\ vector.\ */}}
+\DoxyCodeLine{00141\ \textcolor{comment}{//\ extern\ void\ vec4\_sse\_normalize(vec4\ *v);\ }}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VECTOR4\_H}}
+
+\end{DoxyCode}

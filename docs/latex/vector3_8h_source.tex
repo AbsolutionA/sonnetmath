@@ -1,0 +1,41 @@
+\doxysection{vector3.\+h}
+\hypertarget{vector3_8h_source}{}\label{vector3_8h_source}\index{include/vector3.h@{include/vector3.h}}
+\mbox{\hyperlink{vector3_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VECTOR3\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VECTOR3\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{math__types_8h}{math\_types.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{types_8h}{types.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec3}{vec3}}\ \mbox{\hyperlink{group__vec3___gaa5f0066182032699ea54b541e54591a2}{vec3\_create\_from\_vec2}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec2}{vec2}}\ *v);\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec3}{vec3}}\ \mbox{\hyperlink{group__vec3___gac92cd9fc28f31802b08e7a2b851e27cb}{vec3\_create\_from\_vec4}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v);\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec3___ga899c443dfba53c913c1528893c14f5a3}{vec3\_add}}(\mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1);\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec3___ga41eb28122dfc2f3ccf4fd24c57d44a09}{vec3\_sub}}(\mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1);\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec3___ga2913e519ee7a420d71ee3dd1155acc9b}{vec3\_scalar\_mult}}(\mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ s);\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec3___ga5c1004f0936481a007011835d7bf6c4a}{vec3\_scalar\_div}}(\mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ s);\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec3___ga1e6620988042dcfea1257fb57ce2d532}{vec3\_square\_root}}(\mbox{\hyperlink{structvec3}{vec3}}\ *v);\ }
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{group__vec3___ga7240004e6b1effa15ac8b4cfe427c1f2}{vec3\_magnitude}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v);\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__vec3___ga4fcd643e6eed740639649d893937b60f}{vec3\_normalize}}(\mbox{\hyperlink{structvec3}{vec3}}\ *v);\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{group__vec3___gabc36fcab9efb5944c948a83a6fc88c24}{vec3\_dot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1);\ }
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00124\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec3}{vec3}}\ \mbox{\hyperlink{group__vec3___ga667e082fe557d744664e8ad0cd8dff52}{vec3\_cross\_product}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1);\ }
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00133\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{group__vec3___gae696681e111e2ffb775cc4f94ca098ef}{vec3\_cross\_product\_magnitude}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1);\ }
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec3}{vec3}}\ \mbox{\hyperlink{group__vec3___ga981977e89969c3663288a9a67393b38d}{vec3\_triple\_product}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v2);\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00153\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{group__vec3___gac389393c1d691fa9f3ec13a07b5cd952}{vec3\_scalar\_triple\_product}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec3}{vec3}}\ *v2);\ }
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VECTOR3\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\doxysection{include/vector3.h File Reference}
+\hypertarget{vector3_8h}{}\label{vector3_8h}\index{include/vector3.h@{include/vector3.h}}
+{\ttfamily \#include "{}math\+\_\+types.\+h"{}}\newline
+{\ttfamily \#include "{}types.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvec3}{vec3}} \mbox{\hyperlink{group__vec3___gaa5f0066182032699ea54b541e54591a2}{vec3\+\_\+create\+\_\+from\+\_\+vec2}} (const \mbox{\hyperlink{structvec2}{vec2}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Transform a 2D vector into a 3D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvec3}{vec3}} \mbox{\hyperlink{group__vec3___gac92cd9fc28f31802b08e7a2b851e27cb}{vec3\+\_\+create\+\_\+from\+\_\+vec4}} (const \mbox{\hyperlink{structvec4}{vec4}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Transform a 4D vector into a 3D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec3___ga899c443dfba53c913c1528893c14f5a3}{vec3\+\_\+add}} (\mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Add a 3D vector to another 3D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec3___ga41eb28122dfc2f3ccf4fd24c57d44a09}{vec3\+\_\+sub}} (\mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Subtract a 3D vector with another 3D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec3___ga2913e519ee7a420d71ee3dd1155acc9b}{vec3\+\_\+scalar\+\_\+mult}} (\mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} s)
+\begin{DoxyCompactList}\small\item\em Scalar multiplication with a 3D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec3___ga5c1004f0936481a007011835d7bf6c4a}{vec3\+\_\+scalar\+\_\+div}} (\mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} s)
+\begin{DoxyCompactList}\small\item\em Scalar division with a 3D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec3___ga1e6620988042dcfea1257fb57ce2d532}{vec3\+\_\+square\+\_\+root}} (\mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Calculate the square root of the given 3D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec3___ga7240004e6b1effa15ac8b4cfe427c1f2}{vec3\+\_\+magnitude}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Calculate the magnitude of the 3D vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__vec3___ga4fcd643e6eed740639649d893937b60f}{vec3\+\_\+normalize}} (\mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Normalize the 3D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec3___gabc36fcab9efb5944c948a83a6fc88c24}{vec3\+\_\+dot}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Create a dot product between the two 3D vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvec3}{vec3}} \mbox{\hyperlink{group__vec3___ga667e082fe557d744664e8ad0cd8dff52}{vec3\+\_\+cross\+\_\+product}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Create a cross product from two 3D vectors and return a 3D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec3___gae696681e111e2ffb775cc4f94ca098ef}{vec3\+\_\+cross\+\_\+product\+\_\+magnitude}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1)
+\begin{DoxyCompactList}\small\item\em Calculate the magnitude of the cross product with two 3D vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvec3}{vec3}} \mbox{\hyperlink{group__vec3___ga981977e89969c3663288a9a67393b38d}{vec3\+\_\+triple\+\_\+product}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v2)
+\begin{DoxyCompactList}\small\item\em Calculate the vector triple product of three 3D vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{group__vec3___gac389393c1d691fa9f3ec13a07b5cd952}{vec3\+\_\+scalar\+\_\+triple\+\_\+product}} (const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v1, const \mbox{\hyperlink{structvec3}{vec3}} \texorpdfstring{$\ast$}{*}v2)
+\begin{DoxyCompactList}\small\item\em Calculate the scalar triple product with three 3D vectors and return an f32. \end{DoxyCompactList}\end{DoxyCompactItemize}

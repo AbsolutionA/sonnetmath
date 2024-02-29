@@ -1,0 +1,34 @@
+\doxysection{mat4x4.\+h}
+\hypertarget{mat4x4_8h_source}{}\label{mat4x4_8h_source}\index{include/mat4x4.h@{include/mat4x4.h}}
+\mbox{\hyperlink{mat4x4_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAT4X4\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAT4X4\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{math__types_8h}{../include/math\_types.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmat4x4}{mat4x4}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{types_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}\ \mbox{\hyperlink{structmat4x4_a24c7812b383a82714fbafc9af0ff7f4a}{t}}[4][4];}
+\DoxyCodeLine{00011\ \}\ \mbox{\hyperlink{mat4x4_8h_a46f8412881fca9797e7ecf7dc28ee6a7}{mat4x4}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{mat4x4_8h_affab62f627b5deb58ab42de9787e9ae9}{mat4x4\_parse}}(\mbox{\hyperlink{structmat4x4}{mat4x4}}\ *dest,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v0,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v1,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v2,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v3);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structmat4x4}{mat4x4}}\ \mbox{\hyperlink{mat4x4_8h_a9b3e039f9c54e210a0c20a6482734de5}{mat4x4\_create}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v0,\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v1,\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v2,\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v3);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structmat4x4}{mat4x4}}\ \mbox{\hyperlink{mat4x4_8h_a917a4c5b6cb3c305b27e1a72a141f82e}{mat4x4\_mult}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structmat4x4}{mat4x4}}\ *m0,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structmat4x4}{mat4x4}}\ *m1);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structvec4}{vec4}}\ \mbox{\hyperlink{mat4x4_8h_a448a98f8cc112aa44546fab633fae0f9}{mat4x4\_vec4\_mult}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structmat4x4}{mat4x4}}\ *m,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvec4}{vec4}}\ *v);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//MAT4X4\_H}}
+
+\end{DoxyCode}
