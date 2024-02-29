@@ -2,7 +2,7 @@
 #define MAT2X2_H
 
 
-#include "../include/type_define.h"
+#include "../include/math_types.h"
 
 
 typedef struct mat2x2 {

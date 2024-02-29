@@ -4,43 +4,39 @@
 #include <stdint.h>
 #include <assert.h>
 
-#define true 1 // true
-#define false 0 // false
-
-
 // Unsigned Integers.
 
 /** @brief 8-bit unsigned integer */
-typedef unsigned char u8;
+typedef uint8_t u8;
 
 /** @brief 16-bit unsigned integer */
-typedef unsigned short u16;
+typedef uint16_t u16;
 
 /** @brief 32-bit unsigned integer */
 typedef uint32_t u32;
 
 /** @brief 64-bit unsigned integer */
-typedef unsigned long long u64;
+typedef uint64_t u64;
 
 // Signed integers.
 
 /** @brief 8-bit signed integer */
-typedef signed char i8;
+typedef int8_t i8;
 
 /** @brief 16-bit signed integer */
-typedef signed short i16;
+typedef int16_t i16;
 
 /** @brief 32-bit signed integer */
 typedef int32_t i32;
 
 /** @brief 64-bit signed integer */
-typedef signed long long i64;
+typedef int64_t i64;
 
 
 // Floats.
 
 /** @brief 32-bit float */
-typedef  float f32; 
+typedef float f32; 
 
 /** @brief 64-bit float */
 typedef double f64; 

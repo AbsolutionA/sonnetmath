@@ -2,7 +2,7 @@
 #define MAT3X3_H
 
 
-#include "../include/type_define.h"
+#include "../include/math_types.h"
 
 
 typedef struct mat3x3 {

@@ -1,93 +1,157 @@
 #ifndef VECTOR3_H
 #define VECTOR3_H
 
-#include "type_define.h"
+#include "math_types.h"
 #include "types.h"
 
-/** @brief Transform a 2D vector into a 3D vector. */
-extern vec3 vec3_create_from_vec2(const vec2 *v);
-/** @brief Transform a 4D vector into a 3D vector. */
-extern vec3 vec3_create_from_vec3(const vec4 *v);
+/** @defgroup vec3_ Contains all of the 3D vector operations/functions.
+ * @{ 
+ */
 
-// Add the f32s together and return a vector
-extern vec3 vec3_addv(f32 a, f32 b, f32 c, f32 x, f32 y, f32 z);
-// Add a vector with the given f32s
-extern void vec3_vadd(vec3 *v, f32 a, f32 b, f32 c);
-// Add a vector to another vector
-extern void vec3_vvadd(vec3 *v, const vec3 *v1);
 
-// Subtract the f32s and return a vector
-extern vec3 vec3_subv(f32 a, f32 b, f32 c, f32 x, f32 y, f32 z);
-// Subtract a vector with the given f32s
-extern void vec3_vsub(vec3 *v, f32 a, f32 b, f32 c);
-// Subtract a vector with another vector
-extern void vec3_vvsub(vec3 *v, const vec3 *v1);
+/**
+ * @brief Transform a 2D vector into a 3D vector. 
+ * 
+ * This is used to create a new 3D vector with values
+ * of the 2D vector.
+ * 
+ * @param [*v] Takes a pointer to a vec2 input.
+ * @return [vec3] Returns a 3D vector.
+ * @note The new component (z) will be initialized with 0.
+*/
+extern vec3 vec3_create_from_vec2(const vec2 *v); 
 
-// Scalar multiplication that returns a vector
-extern vec3 vec3_scalar_multv(f32 a, f32 b, f32 c, f32 s);
-// Scalar multiplication with a vector
-extern void vec3_scalar_vmult(vec3 *v, f32 s);
+/** 
+ * @brief Transform a 4D vector into a 3D vector.
+ * 
+ * This is used to create a new 3D vector with values
+ * of the 4D vector.
+ * 
+ * @param [*v] Takes a pointer to a vec4 input.
+ * @return [vec3] Returns a 3D vector.
+ * @note The last component of the 4D vector (w) is lost ofcourse.
+ */
+extern vec3 vec3_create_from_vec4(const vec4 *v); 
 
-// Scalar division with f32s and return a vector
-extern vec3 vec3_scalar_divv(f32 a, f32 b, f32 c, f32 s);
-// Scalar division with a vector
-extern void vec3_scalar_vdiv(vec3 *v, f32 s);
+/** 
+ * @brief Add a 3D vector to another 3D vector.
+ * 
+ * It will add the second 3D vector to the first 3D vector. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @note The first input will be modified.
+ */
+extern void vec3_add(vec3 *v, const vec3 *v1); 
 
-// Create a vector with f32s and do square root and return a vector
-extern vec3 vec3_square_rootv(f32 a, f32 b, f32 c);
-// Calculate the square root of the given vector
-extern void vec3_square_vroot(vec3 *v);
+/** 
+ * @brief Subtract a 3D vector with another 3D vector. 
+ * 
+ * The first 3D vector will be subtracted by the second 3D vector.
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @note The first input will be modified.
+ */
+extern void vec3_sub(vec3 *v, const vec3 *v1); 
 
-// Calculate the magnitude of the f32s
-extern f32 vec3_magv(f32 a, f32 b, f32 c);
-// Calculate the magnitude of the vector
-extern f32 vec3_vmag(const vec3 *v);
+/** 
+ * @brief Scalar multiplication with a 3D vector. 
+ * 
+ * Do multiplication with a scalar on all components of a 3D vector (x, y, z).
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [s] Takes a float/f32 value.
+ * @note The first input will be modified.
+ */
+extern void vec3_scalar_mult(vec3 *v, const f32 s); 
 
-// Normalize the vector with f32s and return a vector
-extern vec3 vec3_normalizev(f32 a, f32 b, f32 c);
-// Normalize the vector
-extern void vec3_vnormalize(vec3 *v);
+/** 
+ * @brief Scalar division with a 3D vector. 
+ * 
+ * Do division with a scalar on all components of a 3D vector (x, y, z).
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [s] Takes a float/f32 value.
+ * @note The first input will be modified.
+ */
+extern void vec3_scalar_div(vec3 *v, f32 s); 
 
-/** @brief Create a dot product between the 3 + 3 components. */
-extern f32 vec3_dot(f32 a, f32 b, f32 c,
-                    f32 x, f32 y, f32 z);
-/** @brief Create a dot product with a 3D vector and 3 components. */
-extern f32 vec3_vdot(const vec3 *v, f32 x, f32 y, f32 z);
-/** @brief Create a dot product between the two 3D vectors. */
-extern f32 vec3_vvdot(const vec3 *v, const vec3 *v1);
+/** 
+ * @brief Calculate the square root of the given 3D vector. 
+ * 
+ * Calculate the square root of a 3D vector on all components (x, y, z).
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @note The first input will be modified.
+ */
+extern void vec3_square_root(vec3 *v); 
 
-/** @brief Create a cross product from 3 + 3 components and return a 3D vector. */
-extern vec3 vec3_cross_product(f32 a, f32 b, f32 c,
-                               f32 x, f32 y, f32 z);
-/** @brief Create a cross product from a 3D vector and 3 components and return a 3D vector. */
-extern vec3 vec3_cross_vproduct(const vec3 *v,
-                                f32 x, f32 y, f32 z);
-/** @brief Create a cross product from 2 3D vectors and return a 3D vector. */
-extern vec3 vec3_cross_vvproduct(const vec3 *v, const vec3 *v1);
+/** 
+ * @brief Calculate the magnitude of the 3D vector. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @return [float/f32] Returns the magnitude of the 3D vector.
+ */
+extern f32 vec3_magnitude(const vec3 *v); 
 
-/** @brief Calculate the magnitude of the cross product with 3 + 3 components. */
-extern f32 vec3_cross_product_mag(f32 a, f32 b, f32 c,
-                                  f32 x, f32 y, f32 z);
-/** @brief Calculate the magnitude of the cross product with a 3D vector and 3 components. */
-extern f32 vec3_cross_product_vmag(const vec3 *v, f32 x, f32 y, f32 z);
-/** @brief Calculate the magnitude of the cross product with 2 3D vectors. */
-extern f32 vec3_cross_product_vvmag(const vec3 *v, const vec3 *v1);
+/** 
+ * @brief Normalize the 3D vector. 
+ * 
+ * Will normalize the 3D vector on all components (x, y, z).
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @note The first input will be modified.
+ */
+extern void vec3_normalize(vec3 *v); 
 
-/** @brief Calculate the vector triple product of 3 3D vectors. */
-extern vec3 vec3_triple_product(const vec3 *v, const vec3 *v1, const vec3 *v2);
+/** 
+ * @brief Create a dot product between the two 3D vectors. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @return [float/f32]
+ */ 
+extern f32 vec3_dot(const vec3 *v, const vec3 *v1); 
 
-/** @brief Calculate the scalar triple product with 3 + 3 + 3 components and return an f32. */
-extern f32 vec3_scalar_triple_productv(f32 a, f32 b, f32 c,
-                                       f32 x, f32 y, f32 z, 
-                                       f32 x1, f32 y1, f32 z1);
-/** @brief Calculate the scalar triple product with a 3D vector and 3 + 3 components and return an f32. */
-extern f32 vec3_scalar_triple_vproduct(const vec3 *v,
-                                       f32 x, f32 y, f32 z,
-                                       f32 x1, f32 y1, f32 z1);
-/** @brief Calculate the scalar triple product with 2 3D vectors and 3 components and return an f32. */
-extern f32 vec3_scalar_triple_vvproduct(const vec3 *v, const vec3 *v1,
-                                        f32 x1, f32 y1, f32 z1);
-/** @brief Calculate the scalar triple product with 3 3D vectors and return an f32. */
-extern f32 vec3_scalar_triple_vvvproduct(const vec3 *v, const vec3 *v1, const vec3 *v2);
+/** 
+ * @brief Create a cross product from two 3D vectors and return a 3D vector. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @return [vec3] Returns the cross product as a vec3.
+ */
+extern vec3 vec3_cross_product(const vec3 *v, const vec3 *v1); 
+
+/** 
+ * @brief Calculate the magnitude of the cross product with two 3D vectors. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @return [float/f32] Returns the magnitude of the cross product.
+ */
+extern f32 vec3_cross_product_magnitude(const vec3 *v, const vec3 *v1); 
+
+/** 
+ * @brief Calculate the vector triple product of three 3D vectors. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @param [*v2] Takes a pointer to a vec3.
+ * @return [vec3] Returns the vector triple product as a vec3.
+ */
+extern vec3 vec3_triple_product(const vec3 *v, const vec3 *v1, const vec3 *v2); 
+
+/** 
+ * @brief Calculate the scalar triple product with three 3D vectors and return an f32. 
+ * 
+ * @param [*v] Takes a pointer to a vec3.
+ * @param [*v1] Takes a pointer to a vec3.
+ * @param [*v2] Takes a pointer to a vec3.
+ * @return [float/f32] Returns the scalar triple product.
+ */
+extern f32 vec3_scalar_triple_product(const vec3 *v, const vec3 *v1, const vec3 *v2); 
+
+/** @}*/
 
 #endif // VECTOR3_H
